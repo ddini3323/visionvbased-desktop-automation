@@ -1,0 +1,39 @@
+[project]
+name = "desktop-automation"
+version = "0.1.0"
+description = "Vision-based desktop automation with VLM visual grounding"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "pyautogui>=0.9.54",
+    "pillow>=10.4.0",
+    "mss>=9.0.1",
+    "requests>=2.31.0",
+    "pywin32>=306",
+    "opencv-python-headless>=4.10.0",
+    "numpy>=1.26.0",
+    "python-dotenv>=1.0.0",
+    "colorama>=0.4.6",
+    "pyperclip>=1.9.0",
+    "easyocr>=1.7.0",
+    "transformers>=4.39.0",
+    "torch>=2.0.0",
+]
+
+[project.scripts]
+desktop-automation = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = ["pytest>=8.0.0", "black>=24.0.0", "ruff>=0.4.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

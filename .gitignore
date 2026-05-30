@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environment (managed by uv)
+.venv/
+
+# Secrets - never commit
+.env
+
+# Runtime output - generated on each run
+screenshots/
+logs/
+templates/
+icon_crop.png
+test_detection.png
+debug_screenshot.png
+
+# Temp debug scripts
+debug_notepad.py
+debug_click.py
+debug_click2.py
+smoke_test2.py
+fix_toml.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# pytest / ruff cache
+.pytest_cache/
+.ruff_cache/
