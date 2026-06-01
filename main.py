@@ -1,4 +1,4 @@
-﻿"""Desktop automation entry point â€” VLM visual grounding + Notepad workflow."""
+"""Desktop automation entry point â€” VLM visual grounding + Notepad workflow."""
 
 from __future__ import annotations
 
